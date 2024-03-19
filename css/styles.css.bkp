@@ -1,0 +1,266 @@
+body {
+    background: url('../assets/images/LogoAzulFinal.jpg');
+    background-size: cover;
+}
+
+/*-------------ESTILOS BOTONES---------*/
+
+a.academia-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+a.academia-link:hover {
+    color: goldenrod;
+}
+
+a.clases-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+a.clases-link:hover {
+    color: goldenrod;
+}
+
+a.NuestrosAlumnos-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+a.NuestrosAlumnos-link:hover {
+    color: goldenrod;
+}
+
+a.MuestrasyProducciones-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+a.MuestrasyProducciones-link:hover {
+    color: goldenrod;
+}
+
+a.Contacto-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+a.Contacto-link:hover {
+    color: goldenrod;
+}
+
+/*-------------------ESTILOS PAGE LA ACADEMIA-----------------*/
+
+video{
+    width: 100%;
+    height: calc(100vh - 100px);
+    object-fit: cover;
+
+}
+
+/*------------------ESTILOS PAGE CLASES--------------------*/
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .content .welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    max-width: 600px;
+  }
+
+  .content h1 {
+    margin: 0;
+    font-size: 29px;
+  }
+
+  .content p {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+  }
+
+
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  main h1 {
+    color: white;
+  }
+
+  main .navigator-text {
+    color: white;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+/*----------------ESTILOS PAGE NUESTROS ALUMNOS----------*/
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    align-items: start;
+  }
+
+  main .content {
+    color: white;
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .carousel img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/*--------------ESTILOS PAGE MUESTRAS Y PRODUCCIONES----------*/
+
+
+/*--------------ESTILOS PAGE CONTACTO----------------*/
+
+.contact_container{
+    width: 22%;
+    margin-left: auto;
+    padding: 1rem, 2rem, 0, 0;
+
+}
+
+.contact_container h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.contact_container .submit_form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.form_contact{
+    color: #fff;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input{
+    width: 100%;
+    padding: 0.3rem;
+}
+
+fieldset{
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+textarea{
+    width: 100%;
+}
+
+/*-------------------ESTILOS FOOTER------------*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .disclaimer {
+  color: white;
+}
+
+/*---------------ESTILOS SOCIAL MEDIA----------*/
+ul.social-media-list {
+    display: flex;
+    list-style: none;
+}
+
+ul.social-media-list li {
+  margin: 0 10px 0 5px;
+}
+
+ul.social-media-list li a {
+  color: white;
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+  body {
+      background-size: initial;
+      background-position-x: -500px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  ul.social-media-list {
+    padding-left: 0px;
+  }
+
+  .contact_container {
+    width: 100%;
+  }
+}

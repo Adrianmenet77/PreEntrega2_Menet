@@ -1,0 +1,21 @@
+{
+  "name": "preentrega3",
+  "version": "1.0.0",
+  "description": "PreEntrega_Menet_a\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D3_Menet_Adrian",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp sass:watch",
+    "build": "gulp all"
+  },
+  "author": "Adrián Menet",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.63.6"
+  }
+}

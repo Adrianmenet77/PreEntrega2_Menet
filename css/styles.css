@@ -1,0 +1,294 @@
+.form-pago fieldset {
+  margin-top: 15px; }
+
+.form-pago p {
+  color: white; }
+
+body {
+  background: url("../assets/images/LogoAzulFinal.jpg");
+  background-size: cover; }
+  @media screen and (max-width: 992px) {
+    body {
+      background-size: initial;
+      background-position-x: -500px; } }
+
+/*-------------ESTILOS BOTONES---------*/
+a {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 100; }
+  a:hover {
+    color: goldenrod !important; }
+
+.btn-academia {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid goldenrod;
+  color: goldenrod !important;
+  transition: 0.3s ease-in-out; }
+  .btn-academia:hover {
+    border: 1px solid white;
+    color: white !important;
+    background-color: goldenrod; }
+
+/*-------------------ESTILOS FOOTER------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0 20px 0; }
+  footer p {
+    margin: 0 !important; }
+  footer .disclaimer {
+    color: white;
+    display: flex;
+    align-items: center; }
+  footer ul {
+    margin: 0 !important; }
+    footer ul.social-media-list {
+      display: flex;
+      list-style: none; }
+      footer ul.social-media-list li {
+        margin: 0 10px 0 5px; }
+        footer ul.social-media-list li a {
+          color: white; }
+      @media screen and (max-width: 992px) {
+        footer ul.social-media-list {
+          padding-left: 0px; } }
+  @media screen and (max-width: 992px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px; } }
+
+img.image-container {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; }
+  img.image-container:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.75); }
+
+.card-academia {
+  border: 1px solid #80808030;
+  border-radius: 5px;
+  padding-top: 12px;
+  position: relative;
+  background-color: #435d6a;
+  color: white;
+  margin: 0 10px 0 10px; }
+  .card-academia .card-featured {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    border: 1px solid red;
+    padding: 4px;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    font-weight: 700; }
+
+.form-pago fieldset {
+  margin-top: 15px; }
+
+.form-pago p {
+  color: white; }
+
+/*------------------ESTILOS PAGES--------------------*/
+main {
+  display: flex;
+  min-height: 88vh;
+  padding-left: 20px;
+  padding-right: 20px; }
+  main.home {
+    justify-content: flex-end;
+    align-items: flex-start; }
+  main.internal {
+    justify-content: center;
+    flex-direction: column; }
+  main.curso {
+    justify-content: center; }
+    main.curso .curso-header {
+      display: flex;
+      flex-direction: row;
+      color: white;
+      max-width: 1200px; }
+      main.curso .curso-header div {
+        margin: 0 10px 0 10px; }
+        main.curso .curso-header div.information {
+          margin-top: 60px; }
+  main video {
+    width: 100%;
+    height: calc(100vh - 100px);
+    object-fit: cover; }
+  main h1 {
+    color: white; }
+  main .navigator-text {
+    color: white; }
+  main .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white; }
+    main .content h1 {
+      margin: 0;
+      font-size: 29px; }
+    main .content p {
+      margin: 10px 0 0 0;
+      font-size: 18px; }
+    main .content .welcome-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: auto;
+      max-width: 600px;
+      padding-right: 8px; }
+  main .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    main .carousel img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px; }
+  main .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden; }
+    main .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; }
+
+.contact_container {
+  width: 22%;
+  margin-left: auto;
+  padding: 1rem, 2rem, 0, 0; }
+  .contact_container h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white; }
+  .contact_container .submit_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; }
+  .contact_container .form_contact {
+    color: #fff; }
+  .contact_container label {
+    display: block;
+    margin-bottom: 0.5rem; }
+  .contact_container input {
+    width: 100%;
+    padding: 0.3rem; }
+  .contact_container fieldset {
+    border: 0;
+    margin-bottom: 1rem; }
+  .contact_container textarea {
+    width: 100%; }
+  @media screen and (max-width: 992px) {
+    .contact_container {
+      width: 100%; } }
+
+img.image-container {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; }
+  img.image-container:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.75); }
+
+body {
+  background: url("../assets/images/LogoAzulFinal.jpg");
+  background-size: cover; }
+  @media screen and (max-width: 992px) {
+    body {
+      background-size: initial;
+      background-position-x: -500px; } }
+
+/*-------------ESTILOS BOTONES---------*/
+a {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 100; }
+  a:hover {
+    color: goldenrod !important; }
+
+.btn-academia {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid goldenrod;
+  color: goldenrod !important;
+  transition: 0.3s ease-in-out; }
+  .btn-academia:hover {
+    border: 1px solid white;
+    color: white !important;
+    background-color: goldenrod; }
+
+.card-academia {
+  border: 1px solid #80808030;
+  border-radius: 5px;
+  padding-top: 12px;
+  position: relative;
+  background-color: #435d6a;
+  color: white;
+  margin: 0 10px 0 10px; }
+  .card-academia .card-featured {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    border: 1px solid red;
+    padding: 4px;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    font-weight: 700; }
+
+/*-------------------ESTILOS FOOTER------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0 20px 0; }
+  footer p {
+    margin: 0 !important; }
+  footer .disclaimer {
+    color: white;
+    display: flex;
+    align-items: center; }
+  footer ul {
+    margin: 0 !important; }
+    footer ul.social-media-list {
+      display: flex;
+      list-style: none; }
+      footer ul.social-media-list li {
+        margin: 0 10px 0 5px; }
+        footer ul.social-media-list li a {
+          color: white; }
+      @media screen and (max-width: 992px) {
+        footer ul.social-media-list {
+          padding-left: 0px; } }
+  @media screen and (max-width: 992px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px; } }

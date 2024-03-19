@@ -1,0 +1,14 @@
+// Animación carrusel de fotos 
+img {
+    &.image-container {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 1px 1px 15px -1px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 1px 1px 15px -1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 1px 15px -1px rgba(0,0,0,0.75);
+        }
+    }
+}

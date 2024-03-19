@@ -1,0 +1,47 @@
+@import './mixins';
+
+/*-------------------ESTILOS FOOTER------------*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+   
+    p {
+        margin: 0 !important;
+    }
+
+    .disclaimer {
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    ul {
+        margin: 0 !important;
+        &.social-media-list {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin: 0 10px 0 5px;
+                a {
+                    color: white;
+                }
+            }
+
+            @include for-phone {
+                padding-left: 0px;
+            }
+        }
+    }
+
+    @include for-phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+}

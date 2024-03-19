@@ -1,0 +1,28 @@
+@import './variables';
+
+/*-------------ESTILOS BOTONES---------*/
+
+a {
+    color: $white !important;
+    text-decoration: none !important;
+    font-weight: 100;
+
+    &:hover {
+        color: $btn-color !important;
+    }
+}
+
+.btn-academia {
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    background-color: $white;
+    border: 1px solid $btn-color;
+    color: $btn-color !important;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        border: 1px solid $white;
+        color: $white !important;
+        background-color: $btn-color;
+    }
+}

@@ -1,0 +1,21 @@
+.card-academia {
+    border: 1px solid #80808030;
+    border-radius: 5px;
+    padding-top: 12px;
+    position: relative;
+    background-color: #435d6a;
+    color: white;
+    margin: 0 10px 0 10px;
+
+    .card-featured {
+        position: absolute;
+        right: 22px;
+        top: 22px;
+        border: 1px solid red;
+        padding: 4px;
+        border-radius: 20px;
+        color: white;
+        background-color: red;
+        font-weight: 700;
+    }
+}

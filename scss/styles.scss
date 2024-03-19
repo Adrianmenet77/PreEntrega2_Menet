@@ -1,0 +1,172 @@
+@import './background';
+@import './buttons';
+@import './footer';
+@import './mixins';
+@import './animations';
+@import './card';
+@import './form';
+
+
+/*------------------ESTILOS PAGES--------------------*/
+
+main {
+    display: flex;
+    min-height: 88vh;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &.home {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    &.internal {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &.curso {
+        justify-content: center;
+
+        .curso-header {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            max-width: 1200px;
+
+            div {
+                margin: 0 10px 0 10px;
+
+                &.information {
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+
+    video {
+        width: 100%;
+        height: calc(100vh - 100px);
+        object-fit: cover;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    .navigator-text {
+        color: white;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+
+        h1 {
+            margin: 0;
+            font-size: 29px;
+        }
+
+        p {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+        }
+
+        .welcome-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            max-width: 600px;
+            padding-right: 8px;
+        }
+    }
+
+    .carousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+        }
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+
+.contact_container{
+    width: 22%;
+    margin-left: auto;
+    padding: 1rem, 2rem, 0, 0;
+
+    h1{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .submit_form {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .form_contact{
+        color: #fff;
+    }
+
+    label{
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    input{
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    fieldset{
+        border: 0;
+        margin-bottom: 1rem;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    @include for-phone {
+        width: 100%;
+    }
+}

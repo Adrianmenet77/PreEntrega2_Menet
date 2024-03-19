@@ -1,0 +1,11 @@
+@import './mixins';
+
+body {
+    background: url('../assets/images/LogoAzulFinal.jpg');
+    background-size: cover;
+
+    @include for-phone {
+        background-size: initial;
+        background-position-x: -500px;
+    }
+}
